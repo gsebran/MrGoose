@@ -22,18 +22,20 @@
     .development .visual-title{max-width:610px!important;margin-bottom:38px!important}
     .origin .visual-title{max-width:430px!important;margin-bottom:38px!important}
     .principles .visual-title{max-width:390px!important}
-    .contact .visual-title{max-width:590px!important;margin:0 auto 36px!important}
     .antiga-closer img{max-width:490px!important}
     .craft .antiga-closer img{max-width:450px!important}
     .hero-logo{width:235px!important;max-width:31vw!important;height:auto!important}
+    .site-footer{background:#0b0a09;color:var(--cream);padding:46px 0 38px;text-align:center}
+    .site-footer .identity-note{margin:0 auto;max-width:590px}
+    .site-footer .copyright{margin-top:24px}
     @media(max-width:860px){
-      .hero .visual-title{max-width:640px!important}.central .visual-title{max-width:680px!important}.lane .visual-title{max-width:330px!important}.disagree .visual-title{max-width:520px!important}.craft .visual-title{max-width:650px!important}.development .visual-title{max-width:580px!important}.origin .visual-title{max-width:420px!important}.principles .visual-title{max-width:390px!important}.contact .visual-title{max-width:560px!important}
+      .hero .visual-title{max-width:640px!important}.central .visual-title{max-width:680px!important}.lane .visual-title{max-width:330px!important}.disagree .visual-title{max-width:520px!important}.craft .visual-title{max-width:650px!important}.development .visual-title{max-width:580px!important}.origin .visual-title{max-width:420px!important}.principles .visual-title{max-width:390px!important}
     }
     @media(max-width:560px){
-      .hero .visual-title{max-width:94vw!important}.central .visual-title{max-width:92vw!important}.lane .visual-title{max-width:72vw!important}.disagree .visual-title{max-width:90vw!important}.craft .visual-title{max-width:90vw!important}.development .visual-title{max-width:88vw!important}.origin .visual-title{max-width:78vw!important}.principles .visual-title{max-width:74vw!important}.contact .visual-title{max-width:88vw!important}.antiga-closer img{max-width:88vw!important}.hero-logo{width:205px!important;max-width:68vw!important}
+      .hero .visual-title{max-width:94vw!important}.central .visual-title{max-width:92vw!important}.lane .visual-title{max-width:72vw!important}.disagree .visual-title{max-width:90vw!important}.craft .visual-title{max-width:90vw!important}.development .visual-title{max-width:88vw!important}.origin .visual-title{max-width:78vw!important}.principles .visual-title{max-width:74vw!important}.antiga-closer img{max-width:88vw!important}.hero-logo{width:205px!important;max-width:68vw!important}
     }
 
-    /* Desktop-only editorial split for the central question. Kept here so it cannot be overridden by older cached CSS. */
+    /* Desktop-only editorial split for the central question. */
     @media(min-width:861px){
       .central .content{
         max-width:none!important;
@@ -76,7 +78,6 @@
           <nav class="hero-nav" aria-label="Primary navigation">
             <a href="#stories">Stories</a>
             <a href="#about">About</a>
-            <a href="#contact">Contact</a>
           </nav>
           <a href="#top" aria-label="Mr. Goose Productions home"><img class="hero-logo" src="logo-inline.svg?v=2" alt="Mr. Goose Productions" /></a>
         </div>
@@ -141,14 +142,15 @@
       <div><h2 class="visual-title reveal"><img src="assets/principles_title.svg?v=8" alt="A simple standard for the work." /></h2></div>
       <div class="belief-list"><div class="belief reveal">Ask a better question.</div><div class="belief reveal">Follow the human being.</div><div class="belief reveal">Look where others have not.</div><div class="belief reveal">Make room for different voices.</div><div class="belief reveal">Let the story earn its meaning.</div><div class="belief reveal">Use the tools. Protect the craft.</div><div class="belief reveal">Make it worth the audience's time.</div></div>
     </div></section>
-
-    <section class="contact grain" id="contact"><div class="shell"><div class="contact-inner">
-      <h2 class="visual-title reveal"><img src="assets/contact_title.svg?v=8" alt="Every story starts somewhere." /></h2>
-      <p class="contact-copy reveal">For projects, partnerships and conversations worth having, send us a note.</p>
-      <form class="contact-form reveal" id="contact-form" novalidate><div class="field"><label for="contact-name">Name</label><input id="contact-name" name="name" type="text" autocomplete="name" required /></div><div class="field"><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" required /></div><div class="field message"><label for="contact-message">What would you like to talk about?</label><textarea id="contact-message" name="message" required></textarea></div><div class="form-actions"><button type="submit">Send a note</button></div><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form>
-      <p class="identity-note reveal">Based in Texas, Mr. Goose is a Latino- and veteran-led company developing film and television with collaborators wherever the story takes us.</p><div class="copyright reveal">© 2026</div>
-    </div></div></section>
   </main>
-  <script src="script.js?v=8" defer></script>
+
+  <footer class="site-footer grain">
+    <div class="shell">
+      <p class="identity-note reveal">Based in Texas, Mr. Goose is a Latino- and veteran-led company developing film and television with collaborators wherever the story takes us.</p>
+      <div class="copyright reveal">© 2026</div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=9" defer></script>
 </body>
 </html>
