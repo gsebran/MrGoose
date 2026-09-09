@@ -11,7 +11,7 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="styles.css?v=8" />
-  <link rel="stylesheet" href="align-fixes.css?v=2" />
+  <link rel="stylesheet" href="align-fixes.css?v=3" />
   <style>
     /* Final display scale: Antiga stays cinematic, but never takes over the viewport. */
     .hero .visual-title{max-width:760px!important}
@@ -31,6 +31,40 @@
     }
     @media(max-width:560px){
       .hero .visual-title{max-width:94vw!important}.central .visual-title{max-width:92vw!important}.lane .visual-title{max-width:72vw!important}.disagree .visual-title{max-width:90vw!important}.craft .visual-title{max-width:90vw!important}.development .visual-title{max-width:88vw!important}.origin .visual-title{max-width:78vw!important}.principles .visual-title{max-width:74vw!important}.contact .visual-title{max-width:88vw!important}.antiga-closer img{max-width:88vw!important}.hero-logo{width:205px!important;max-width:68vw!important}
+    }
+
+    /* Desktop-only editorial split for the central question. Kept here so it cannot be overridden by older cached CSS. */
+    @media(min-width:861px){
+      .central .content{
+        max-width:none!important;
+        display:grid!important;
+        grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr)!important;
+        column-gap:84px!important;
+        row-gap:0!important;
+        align-items:center!important;
+      }
+      .central .visual-title{
+        grid-column:1!important;
+        grid-row:1 / span 2!important;
+        max-width:none!important;
+        margin:0!important;
+      }
+      .central .lead{
+        grid-column:2!important;
+        grid-row:1!important;
+        max-width:430px!important;
+        margin:0!important;
+        align-self:end!important;
+      }
+      .central .tag{
+        grid-column:2!important;
+        grid-row:2!important;
+        max-width:430px!important;
+        margin:26px 0 0!important;
+        padding-top:22px!important;
+        border-top:1px solid rgba(23,20,17,.18)!important;
+        align-self:start!important;
+      }
     }
   </style>
 </head>
